@@ -1,0 +1,41 @@
+.sectionWhy{
+    background-color: hsl(220, 16%, 96%);
+    padding: 2rem;
+}
+
+.whyHeader{
+    max-width: 50%;
+}
+
+.whyCards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.whyCards div{
+    width: 300px;
+    background-color: hsl(220, 16%, 96%);
+}
+
+@media only screen and (max-width: 767px){
+    .sectionWhy{
+         padding: 2rem;
+     }
+    .whyHeader{
+         max-width: 100%;
+         text-align: center;
+     }
+    .whyCards{
+         display: flex;
+         flex-direction: column;
+         flex-wrap: wrap;
+         justify-content: space-around;
+         text-align: center;
+
+     }
+    .whyCards div{
+         width: 100%;
+         background-color: hsl(220, 16%, 96%);
+     }
+}

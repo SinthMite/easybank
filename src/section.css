@@ -1,0 +1,105 @@
+.sectionMain {
+    display: flex;
+    flex-direction: column; 
+    position: relative;
+    margin-top: 7rem;
+  }
+  
+  #background {
+    top: -50rem;
+    transform: translateX(65%);
+    transform: translateY(-30%);
+    width: 100%;
+    z-index: -1;
+  }
+  
+  #background img {
+    width: 100%; 
+  }
+  
+  #sectionOne {
+    position: relative;
+  }
+  
+  #writingForSection {
+    width: 100%; 
+    padding: 20px;
+    text-align: left;
+  }
+  
+  #writingForSection h2 {
+    font-size: 3em;
+    font-weight: 300;
+  }
+  
+  #writingForSection p {
+    font-size: 1rem;
+    font-weight: 200;
+  }
+  
+  #sectionTwo {
+    position: absolute;
+    top: -10rem;
+    transform: translate(100%);
+  }
+  
+  #sectionTwo img {
+    max-width: 100%; 
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .sectionMain {
+      flex-direction: row; 
+    }
+  
+    #background {
+      top: 0;
+      transform: none;
+      width: 50%; 
+    }
+  
+    #sectionOne {
+      flex: 1; 
+    }
+  
+    #writingForSection {
+      width: 100%; 
+      padding: 20px;
+      text-align: left; 
+    }
+  
+    #sectionTwo {
+      width: 50%; 
+    }
+  }
+
+  @media only screen and (max-width: 767px){
+    .sectionMain {
+      flex-direction: column-reverse; 
+    }
+
+    #background {
+        top: 0;
+        transform: none;
+        width: 100%; 
+    }
+
+    #sectionOne {
+      flex: 1; 
+    }
+    #writingForSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+    }
+    #sectionTwo {
+        position: absolute;
+        top: -10rem;
+        transform: translate(0%);
+      }
+      
+      #sectionTwo img {
+        max-width: 100%; 
+      }
+  }

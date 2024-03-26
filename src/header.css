@@ -1,0 +1,46 @@
+.headerNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    position:fixed;
+    z-index: 20000;
+    background-color: hsl(0, 0%, 98%);
+    padding: 1rem;
+}
+
+.headerNav ul{
+    display: flex;
+}
+
+.headerNav ul li{
+    list-style: none;
+    padding: 1em;
+    font-weight: 200;
+}
+button{
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(45deg ,hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    border-radius: 10rem;
+}
+.headerNav button{
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(45deg ,hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    border-radius: 10rem;
+}
+#hamburger{
+    display: none;
+}
+@media only screen and (max-width: 767px){
+    .headerNav ul{
+        display: none;
+    }
+    .headerNav button{
+        display: none;
+    }
+    #hamburger{
+        display: block;
+        cursor: pointer;
+    
+}
+}

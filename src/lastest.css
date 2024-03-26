@@ -1,0 +1,26 @@
+.LastestContainer{
+    margin-top: 3rem;
+}
+.latestCard{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 2rem;
+}
+.latestCard div{
+    aspect-ratio: 3;
+    width: 300px;
+    background-color: white;
+    box-shadow: 1px 1px 20px rgba(185, 185, 185,0.5);
+    border-radius: 0rem;
+
+}
+
+.latestCard div img{
+    width: 100%;
+}
+
+article{
+    padding: 1rem;
+}

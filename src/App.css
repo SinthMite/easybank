@@ -1,0 +1,15 @@
+*{
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0%;
+}
+
+
+.header{
+  position: absolute;
+  z-index: 1000;
+}
+.sectionOne{
+  position: absolute;
+  z-index: 500;
+}
